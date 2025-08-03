@@ -1,0 +1,30 @@
+# Node.js dependencies
+node_modules/
+
+# PHP Composer dependencies
+vendor/
+
+# Docker volumes (local data)
+compose/dbdata/
+compose/moodledata/
+compose/moodlehtml/
+
+# Environment configs (never commit secrets)
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# OS-specific files
+.DS_Store
+
+# Temporary/editor files
+*.swp
+*.swo
+
+# Docker-related
+tmp/
+*.pid
+

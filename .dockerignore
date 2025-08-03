@@ -1,0 +1,25 @@
+# Git metadata and CI configs
+.git
+.gitignore
+.github
+
+# Node and PHP dependencies (handled at build time, if needed)
+node_modules
+vendor
+
+# Temporary and local environment files
+tmp
+.env
+.env.local
+.env.*
+
+# macOS system files
+.DS_Store
+
+# Swap and log files
+*.log
+*.swp
+
+# Example configs not needed in production image
+compose/
+
