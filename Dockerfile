@@ -51,8 +51,7 @@ RUN echo "max_input_vars=5000" >> /usr/local/etc/php/conf.d/moodle.ini \
 RUN git clone --depth 1 --branch ${MOODLE_TAG} https://github.com/moodle/moodle.git /var/www/html
 
 # Prepare data folder and permissions
-RUN mkdir -p /var/www/moodledata \
-    && chown -R www-data:www-data /var/www/html /var/www/moodledata \
+RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html
 
 # Add entrypoint for dynamic config.php generation
