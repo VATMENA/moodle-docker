@@ -1,6 +1,10 @@
 #!/bin/bash
 set -e
 
+mkdir -p /var/www/moodledata
+chown -R www-data:www-data /var/www/html /var/www/moodledata
+chmod -R 755 /var/www/html
+
 if [ ! -f /var/www/html/config.php ]; then
   echo "Generating config.php from ENV"
 
