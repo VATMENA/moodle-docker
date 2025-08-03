@@ -21,6 +21,7 @@ if [ ! -f /var/www/html/config.php ]; then
 \$CFG->wwwroot   = getenv('WWWROOT');
 \$CFG->dataroot  = '/var/www/moodledata';
 \$CFG->directorypermissions = 0777;
+\$CFG->sslproxy = true;
 require_once(__DIR__ . '/lib/setup.php');
 EOF
 
