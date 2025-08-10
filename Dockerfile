@@ -5,7 +5,7 @@ LABEL maintainer="Michael Meese <michael@evomation.de>"
 LABEL description="Moodle 4.5.x Docker image with PHP 8.3 and required extensions"
 
 # Pass Moodle tag as build argument
-ARG MOODLE_TAG=MOODLE_500_STABLE
+ARG MOODLE_TAG=v4.2.3
 ENV MOODLE_TAG=${MOODLE_TAG}
 
 # Install system dependencies and required PHP extensions
