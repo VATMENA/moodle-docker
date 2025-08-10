@@ -32,3 +32,4 @@ cat /var/www/html/config.php
 echo -e "database parameters: ${DB_HOST} ${DB_NAME} ${DB_USER} ${DB_PASS}"
 exec apache2-foreground
 
+ls /var/www/moodledata
